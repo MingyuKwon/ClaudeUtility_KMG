@@ -44,3 +44,15 @@ with open(settings_path, 'w', encoding='utf-8') as f:
 
 print(f"  statusLine 등록 완료: {script_path}")
 EOF
+
+# 슬래시 커맨드 등록 (template → ~/.claude/commands/)
+TOGGLE_PATH="$UTIL_DIR/toggle.sh"
+COMMANDS_DIR="$HOME/.claude/commands"
+mkdir -p "$COMMANDS_DIR"
+
+for template in "$UTIL_DIR/commands/"*.md.template; do
+  filename="$(basename "${template%.template}")"
+  output="$COMMANDS_DIR/$filename"
+  sed "s|{{TOGGLE_PATH}}|$TOGGLE_PATH|g" "$template" > "$output"
+  echo "  커맨드 등록 완료: /$( basename "${filename%.md}" )"
+done

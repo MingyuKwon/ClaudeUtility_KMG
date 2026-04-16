@@ -1,0 +1,2 @@
+다음 명령어를 실행해라: `bash '{{TOGGLE_PATH}}' off`
+실행 후 "statusLine 비활성화됨" 이라고 짧게 답해라.
