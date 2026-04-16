@@ -30,3 +30,14 @@ bash install.sh
 ```
 
 `~/.claude/settings.json`의 `statusLine` 항목에 경로가 자동 등록됩니다. 이후 Claude Code를 재시작하면 적용됩니다.
+
+설치 시 슬래시 커맨드도 함께 등록됩니다.
+
+## 슬래시 커맨드
+
+설치 후 Claude Code 안에서 아래 커맨드로 상태줄을 켜고 끌 수 있습니다.
+
+| 커맨드 | 동작 |
+|---|---|
+| `/statusline-on` | 상태줄 활성화 |
+| `/statusline-off` | 상태줄 비활성화 |
