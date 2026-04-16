@@ -16,7 +16,7 @@ bash install.sh
 
 | 폴더 | 설명 |
 |---|---|
-| `ShowTokenCost_Pro` | Claude Code 하단 상태줄에 rate limit / 리셋 시간 표시 |
+| [`ShowTokenCost_Pro`](ShowTokenCost_Pro/README.md) | Claude Code 하단 상태줄에 rate limit / 리셋 시간 표시 |
 
 ## 구조
 
